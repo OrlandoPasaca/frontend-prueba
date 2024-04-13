@@ -1,0 +1,9 @@
+<ion-content>
+  <div *ngIf="currentImage">
+    <div class="container">
+      <ion-spinner color="warning" class="loader" *ngIf="loading"></ion-spinner>
+      <img class="image" [src]="currentImage?.url" alt="{{ currentImage?.text }}">
+    </div>
+    <p style="text-align: center;">{{ currentImage?.text }}</p>
+  </div>
+</ion-content>
